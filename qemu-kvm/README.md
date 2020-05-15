@@ -46,5 +46,5 @@ Steps:
 - Regenerate the initramfs using(Change ```linux54``` to the kernel you're using):
 - ```$ sudo mkinitcpio -p linux54```
 - Reboot
-- Check if the drivers in use for the dGPU are ```vfio-pci`` using:
+- Check if the drivers in use for the dGPU are ```vfio-pci``` using:
 - ```$ lspci -nnk```
