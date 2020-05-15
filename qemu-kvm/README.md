@@ -62,3 +62,4 @@ Steps:
 - ```$ sudo systemctl start virtlogd.socket```
 - ```$ sudo virsh net-autostart default```
 - Download the [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)
+- Download the [VIRTIO drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/#virtio-win-direct-downloads)
