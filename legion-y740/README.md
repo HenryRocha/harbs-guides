@@ -1,5 +1,10 @@
 # Lenovo Legion Y740
 
+## Laptop Info
+
+- Model: `Legion Y740-17IRHg`
+- [Lenovo's drivers](https://pcsupport.lenovo.com/br/en/products/laptops-and-netbooks/legion-series/legion-y740-17irhg/downloads/driver-list)
+
 # BIOS
 
 - To access the BIOS keep hitting `F2` after turning the laptop on.
