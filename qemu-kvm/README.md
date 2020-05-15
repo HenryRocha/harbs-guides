@@ -4,6 +4,9 @@
 References:
 - [Arch Wiki](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
 - [Optimus laptop dGPU passthrough](https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28)
+- [SomeOrdinaryGamers's guide to QEME/KVM/Passthrough](https://www.youtube.com/watch?v=h7SG7ccjn-g)
+- [Newbie Guide Migrating to Linux](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/)
+- [LEVEL1TECHS forum posts on passthrough](https://forum.level1techs.com/tags/passthrough)
 
 Steps:
 - Read the [Prerequisites](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#Prerequisites) on the ArchWiki.
