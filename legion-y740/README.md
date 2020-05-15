@@ -4,6 +4,7 @@
 
 - Model: `Legion Y740-17IRHg`
 - [Lenovo's drivers](https://pcsupport.lenovo.com/br/en/products/laptops-and-netbooks/legion-series/legion-y740-17irhg/downloads/driver-list)
+- [How to install Lenovo Vantage](https://support.lenovo.com/us/en/solutions/ht505081)
 
 # BIOS
 
