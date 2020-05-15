@@ -32,7 +32,7 @@ Steps:
 - Watch [SomeOrdinaryGamers's guide to QEME/KVM/Passthrough](https://youtu.be/h7SG7ccjn-g?t=904)
 - Create and edit the file ```/etc/modprobe.d/vfio.conf``` with:
 - ```$ sudo nvim /etc/modprobe.d/vfio.conf```
-- The file should be empty at first and you will need to fill it out. Using the IOMMU groups you got from the last step on [IOMMU](#iommu)
+- The file should be empty at first and you will need to fill it out, using the IOMMU groups you got from the last step on [IOMMU](#iommu).
 - Add ```options vfio-pci ids=XXXX``` to the file, using the correct ID's for your group. Should look something like this:
 - ```options vfio-pci ids=10de:13c2,10de:0fbb```
 - Edit ```/etc/default/grub```, using:
