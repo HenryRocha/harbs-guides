@@ -63,3 +63,7 @@ Steps:
 - ```$ sudo virsh net-autostart default```
 - Download the [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)
 - Download the [VIRTIO drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/#virtio-win-direct-downloads)
+- Open `virt-manager` and create a new virtual machine:
+  - `Local install media`
+  - `Browse`
+  - Create new pool where you want your VM files stored at. Refer to [this guide](https://www.tecmint.com/manage-kvm-storage-volumes-and-pools/).
