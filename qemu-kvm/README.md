@@ -49,3 +49,15 @@ Steps:
 - Reboot
 - Check if the drivers in use for the dGPU are ```vfio-pci``` using:
 - ```$ lspci -nnk```
+
+## Configuring the VM
+
+Steps:
+- Install the required packages:
+- ```$ sudo pacman -S qemu virt-manager ovmf dnsmasq ebtables iptables```
+- Enable and start all the services:
+- ```$ sudo systemctl enable libvirtd.service```
+- ```$ sudo systemctl start libvirtd.service```
+- ```$ sudo systemctl enable virtlogd.socket```
+- ```$ sudo systemctl start virtlogd.socket```
+- ```$ sudo virsh net-autostart default```
