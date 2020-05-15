@@ -47,4 +47,4 @@ Steps:
 - ```$ sudo mkinitcpio -p linux54```
 - Reboot
 - Check if the drivers in use for the dGPU are ```vfio-pci`` using:
-- ```lspci -nnk``
+- ```lspci -nnk```
