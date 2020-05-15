@@ -43,7 +43,7 @@ Steps:
 - ```$ sudo nvim /etc/mkinitcpio.conf```
 - Add ```vfio_pci vfio vfio_iommu_type1 vfio_virqfd``` to ```MODULES```.
 - Make sure that ```HOOKS``` contains ```modconf```.
-- Regenerate the initramfs using(Change ```linux54``` to the kernel you're using):
+- Regenerate the initramfs using (Change ```linux54``` to the kernel you're using):
 - ```$ sudo mkinitcpio -p linux54```
 - Reboot
 - Check if the drivers in use for the dGPU are ```vfio-pci``` using:
