@@ -50,6 +50,7 @@ henryrocha@legionY740> sudo dmesg | grep -i -e DMAR -e IOMMU                    
 [    1.510319] AMD-Vi: AMD IOMMUv2 functionality not available on this system
 [   11.522539] nvidia 0000:01:00.0: DMAR: 32bit DMA uses non-identity mapping
 ```
+
 - Output for IOMMU groups: 
 ```
 henryrocha@legionY740> ./iommu_groups.sh                                                                                                                          ~/Repositories/IOMMU-viewer
@@ -95,4 +96,9 @@ IOMMU Group 8:
 	00:17.0 SATA controller [0106]: Intel Corporation Cannon Lake Mobile PCH SATA AHCI Controller [8086:a353] (rev 10)
 IOMMU Group 9:
 	00:1b.0 PCI bridge [0604]: Intel Corporation Cannon Lake PCH PCI Express Root Port #17 [8086:a340] (rev f0)
+```
+
+- Contents of ```/etc/modprobe.d/vfio.conf```:
+```
+options vfio-pci ids=8086:1901,10de:1f51,10de:10f9,10de:1ada,10de:1adb
 ```
