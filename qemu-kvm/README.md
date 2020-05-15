@@ -1,3 +1,4 @@
+
 # Personal guide to QEMU/KVM
 
 References:
@@ -50,7 +51,7 @@ Steps:
 - Check if the drivers in use for the dGPU are ```vfio-pci``` using:
 - ```$ lspci -nnk```
 
-## Configuring the VM
+## Creating and configuring the Virtual Machine
 
 Steps:
 - Install the required packages:
@@ -67,3 +68,22 @@ Steps:
   - `Local install media`
   - `Browse`
   - Create new pool where you want your VM files stored at. Refer to [this guide](https://www.tecmint.com/manage-kvm-storage-volumes-and-pools/).
+  - Copy the Windows 10 ISO and VIRTIO drivers you download to the pool you just created.
+  - Select the ISO from the browse menu.
+  - Choose the amount of RAM and cores you wish to give your VM.
+  - Choose the size of your VM. If creating custom, do it in the pool you created before.
+  - Give the VM a name and check `Customize configuration before install`.
+  - In the settings of the machine, select `Overview` and set:
+	  - `Chipset` to `Q35`
+	  - `FIRMWARE` to `UEFI x86_64 .../OVMF_CODE.fd`
+  - Now select `CPUs` and manually set the CPU topology according to your CPU.
+  - Go to  `... Disk 1 > Advanced options` and set:
+	  - `Disk bus` to `VirtIO`
+  - Go to `... CDROM 1` and set `Disk bus` to `SATA`.
+  - Click on `+ Add Hardware > Storage`:
+	  - Check `Select or create custom storage`
+	  - Click on `Manage`, go to the pool you created and select the VIRTIO drivers
+	  - Make sure the `Device type` is set to `CDROM`
+	  - And the `Bus type` is set to `VirtIO`
+   - Click on `+ Add Hardware > PCI Host Device` and select everything that was in the same IOMMU group your dGPU was on. 
+   - Click on `Begin installation`.
