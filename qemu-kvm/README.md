@@ -61,3 +61,4 @@ Steps:
 - ```$ sudo systemctl enable virtlogd.socket```
 - ```$ sudo systemctl start virtlogd.socket```
 - ```$ sudo virsh net-autostart default```
+- Download the [Windows 10 ISO](https://www.microsoft.com/en-us/software-download/windows10ISO)
