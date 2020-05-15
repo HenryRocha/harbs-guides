@@ -6,6 +6,7 @@ References:
 - [SomeOrdinaryGamers's guide to QEME/KVM/Passthrough](https://www.youtube.com/watch?v=h7SG7ccjn-g)
 - [Newbie Guide Migrating to Linux](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/)
 - [LEVEL1TECHS forum posts on passthrough](https://forum.level1techs.com/tags/passthrough)
+- [Passthrough Helper Manjaro](https://github.com/pavolelsig/passthrough_helper_manjaro)
 
 ## IOMMU
 
