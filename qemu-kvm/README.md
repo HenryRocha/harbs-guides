@@ -96,7 +96,7 @@ Steps:
 - Select `Custom install`. There will be no drives shown there, that's when the VIRTIO drivers we downloaded before come into play.
 - Click `Load driver > Browse` and find the driver that says something like `...w10`. Refer to [this guide](https://linuxhint.com/install_virtio_drivers_kvm_qemu_windows_vm/) if you're having problems.
 - Continue installing like normal.
-- After finishing the installation you should be able to see the login screen. If you don't get any output on the external display but can still use the VM through window created by Virt-Manager then go to [Solving Error 43](#solving_error_43).
+- After finishing the installation you should be able to see the login screen. If you don't get any output on the external display but can still use the VM through window created by Virt-Manager then go to [Solving Error 43](#solving-error-43).
 
 ## Solving Error 43
 
