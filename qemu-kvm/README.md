@@ -8,6 +8,7 @@ References:
 - [Newbie Guide Migrating to Linux](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/)
 - [LEVEL1TECHS forum posts on passthrough](https://forum.level1techs.com/tags/passthrough)
 - [Passthrough Helper Manjaro](https://github.com/pavolelsig/passthrough_helper_manjaro)
+- [NVIDIA RTX 2060 Mobile successful passthrough](https://old.reddit.com/r/VFIO/comments/ebo2uk/nvidia_geforce_rtx_2060_mobile_success_qemu_ovmf/)
 
 ## IOMMU
 
