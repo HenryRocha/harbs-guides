@@ -88,3 +88,44 @@ Steps:
 	  - And the `Bus type` is set to `VirtIO`
    - Click on `+ Add Hardware > PCI Host Device` and select everything that was in the same IOMMU group your dGPU was on. 
    - Click on `Begin installation`.
+
+## Installing Windows 10
+
+Steps:
+- Install it normally until you get to the `Install` screen.
+- Select `Custom install`. There will be no drives shown there, that's when the VIRTIO drivers we downloaded before come into play.
+- Click `Load driver > Browse` and find the driver that says something like `...w10`. Refer to [this guide](https://linuxhint.com/install_virtio_drivers_kvm_qemu_windows_vm/) if you're having problems.
+- Continue installing like normal.
+- After finishing the installation you should be able to see the login screen. If you don't get any output on the external display but can still use the VM through window created by Virt-Manager then go to [Solving Error 43](#solving_error_43).
+
+## Solving Error 43
+
+Read [Arch Wiki Error 43](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#%22Error_43:_Driver_failed_to_load%22_on_Nvidia_GPUs_passed_to_Windows_VMs) and, if you're on a laptop or ran out of things to try, [NVIDIA RTX 2060 Mobile successful passthrough](https://old.reddit.com/r/VFIO/comments/ebo2uk/nvidia_geforce_rtx_2060_mobile_success_qemu_ovmf/).
+
+Steps:
+- Copy the file `SSDT1.dat`, which you find in this repository in `qemu-kvm/SSDT1.dat` to the pool we created earlier.
+- Go to your Virt-Manager and open your VM.
+- Click on `Information > Overview > XML`. Your `XML` file should look something like this:
+```
+<domain xmlns:qemu="http://libvirt.org/schemas/domain/qemu/1.0" type="kvm">
+  ...
+  <features>
+    ...
+    <hyperv>
+      ...
+      <vendor_id state="on" value="fucknvidia"/>
+      ...
+    </hyperv>
+    <kvm>
+      <hidden state="on"/>
+    </kvm>
+    ...
+  </features>
+  ...
+  <qemu:commandline>
+    <qemu:arg value="-acpitable"/>
+    <qemu:arg value="file=/path/to/your/SSDT1.dat"/>
+  </qemu:commandline>
+</domain>
+```
+- The error should be fixed now.
