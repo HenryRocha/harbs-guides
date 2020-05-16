@@ -2,13 +2,14 @@
 # Personal guide to QEMU/KVM
 
 References:
-- [Arch Wiki](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
+- [Arch Wiki's PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
 - [Optimus laptop dGPU passthrough](https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28)
 - [SomeOrdinaryGamers's guide to QEME/KVM/Passthrough](https://www.youtube.com/watch?v=h7SG7ccjn-g)
 - [Newbie Guide Migrating to Linux](https://www.reddit.com/r/linux_gaming/comments/edaq0s/guide_migrating_to_linux_in_2020/)
 - [LEVEL1TECHS forum posts on passthrough](https://forum.level1techs.com/tags/passthrough)
 - [Passthrough Helper Manjaro](https://github.com/pavolelsig/passthrough_helper_manjaro)
 - [NVIDIA RTX 2060 Mobile successful passthrough](https://old.reddit.com/r/VFIO/comments/ebo2uk/nvidia_geforce_rtx_2060_mobile_success_qemu_ovmf/)
+- [GPU Passthrough on trillian](https://gist.github.com/kaapstorm/4e51ff5f500eb7e93820d2e630dfdbbc)
 
 ## IOMMU
 
