@@ -1,7 +1,11 @@
 
 # Personal guide to QEMU/KVM
 
-References:
+## Introduction
+
+This is a personal guide. I am not responsible for anything that happens to your computer if you decide to follow this guide, this is just what worked for me what I understood from reading a lot of guides and getting help on forums or discords.
+
+## References:
 - [Arch Wiki's PCI passthrough via OVMF](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF)
 - [Optimus laptop dGPU passthrough](https://gist.github.com/Misairu-G/616f7b2756c488148b7309addc940b28)
 - [SomeOrdinaryGamers's guide to QEME/KVM/Passthrough](https://www.youtube.com/watch?v=h7SG7ccjn-g)
