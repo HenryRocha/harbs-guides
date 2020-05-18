@@ -18,6 +18,7 @@ This was done on a Lenovo Legion Y740 using Manjaro as host and Windows 10 as gu
 - [GPU Passthrough on trillian](https://gist.github.com/kaapstorm/4e51ff5f500eb7e93820d2e630dfdbbc)
 - [Windows VM GPU Passthrough Ubuntu](https://mathiashueber.com/windows-virtual-machine-gpu-passthrough-ubuntu/)
 - [MobilePassThrough](https://github.com/T-vK/MobilePassThrough)
+- [Bryansteiner's GPU Passthrough Tutorial](https://github.com/bryansteiner/gpu-passthrough-tutorial)
 
 ## IOMMU
 
