@@ -1,4 +1,5 @@
 
+
 # Personal guide to QEMU/KVM
 
 ## Introduction
@@ -139,3 +140,13 @@ Steps:
 </domain>
 ```
 - The error should be fixed now.
+
+## NVIDIA GPU found on host but no driver in use
+
+Try this:
+```
+modprobe nvidia_drm
+modprobe nvidia_modeset
+modprobe nvidia_uvm
+modprobe nvidia
+```
