@@ -31,5 +31,12 @@ docker run --rm --privileged -it \
 $tag $*
 ```
 
+Links for later reference:
+- [Example of docker script for another FPGA docker repo](https://github.com/Gekkio/docker-fpga/blob/master/lattice-diamond/run.sh)
+- [Dockerized FPGA toolchains](https://section5.ch/index.php/2017/01/20/669/)
+- [How to containerize an FPGA Application?](https://www.accelize.com/how-to-containerize-an-fpga-application/)
+- [Intel Quartus Prime in Docker](https://www.jamieiles.com/posts/quartus-docker/)
+- [Arck Wiki: Altera Design Software](https://wiki.archlinux.org/index.php/Altera_Design_Software)
+
 [1]: https://github.com/halfmanhalftaco/fpga-docker "FPGA-Docker"
 [2]: https://wiki.archlinux.org/index.php/Altera_Design_Software#USB-Blaster_Download_Cable_Driver "Arch Wiki: USB-Blaster_Download_Cable_Driver"
