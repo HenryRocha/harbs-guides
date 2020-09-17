@@ -31,5 +31,5 @@ docker run --rm --privileged -it \
 $tag $*
 ```
 
-[1]: http://example.com/ "FPGA-Docker"
+[1]: https://github.com/halfmanhalftaco/fpga-docker "FPGA-Docker"
 [2]: https://wiki.archlinux.org/index.php/Altera_Design_Software#USB-Blaster_Download_Cable_Driver "Arch Wiki: USB-Blaster_Download_Cable_Driver"
